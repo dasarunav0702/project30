@@ -8,11 +8,11 @@ class Block2 {
       this.body = Bodies.rectangle(x, y, width, height, options);
       this.width = width;
       this.height = height;
-      
+      this.visibility=255;
       World.add(world, this.body);
     }
     display(){
-        if (this.body.speed<7){
+        if (this.body.speed<8){
       var pos =this.body.position;
       var angle = this.body.angle;
       push();
